@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comsy - Computer Lab Management System</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+      <nav
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div class="logo">Comsy</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="login.html" id="loginBtn">Login</a></li>
+          <li><a href="#about-project">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <!-- Testimonials link removed from nav bar as requested -->
+          <li><a href="#contact">Contact</a></li>
+          <li class="theme-toggle-wrapper">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="theme-toggle-label">
+              <div class="thumb">
+                <div class="rotator">
+                  <div class="left side">
+                    <!-- Moon SVG Icon -->
+                    <svg
+                      class="moon-icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                        fill="#ffffff"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="right side">
+                    <!-- Sun SVG Icon -->
+                    <svg
+                      class="sun-icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12" cy="12" r="5" fill="#ffffff"></circle>
+                      <line
+                        x1="12"
+                        y1="1"
+                        x2="12"
+                        y2="3"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                      ></line>
+                      <line
+                        x1="12"
+                        y1="21"
+                        x2="12"
+                        y2="23"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                      ></line>
+                      <line
+                        x1="4.22"
+                        y1="4.22"
+                        x2="5.64"
+                        y2="5.64"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                      ></line>
+                      <line
+                        x1="18.36"
+                        y1="18.36"
+                        x2="19.78"
+                        y2="19.78"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                      ></line>
+                      <line
+                        x1="1"
+                        y1="12"
+                        x2="3"
+                        y2="12"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                      ></line>
+                      <line
+                        x1="21"
+                        y1="12"
+                        x2="23"
+                        y2="12"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                      ></line>
+                      <line
+                        x1="4.22"
+                        y1="19.78"
+                        x2="5.64"
+                        y2="18.36"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                      ></line>
+                      <line
+                        x1="18.36"
+                        y1="5.64"
+                        x2="19.78"
+                        y2="4.22"
+                        stroke="#ffffff"
+                        stroke-width="2"
+                      ></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content animate-on-scroll">
+      <div class="hero-content">
+        <h1>Comsy</h1>
+        <h3>Computer Lab Management System</h3>
+        <p>
+          Streamline Your Lab Operations with Real-Time Monitoring and
+          Management
+        </p>
+        <div class="hero-buttons">
+          <button
+            class="button-primary"
+            onclick="window.location.href='login.html'"
+          >
+            Get Started
+          </button>
+          <button
+            class="button-secondary"
+            onclick="scrollToSection('about-project')"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-project" class="about-project">
+        <h2 class="animate-on-scroll">About Comsy</h2>
+        <p class="animate-on-scroll">
+        Comsy is a comprehensive lab management system designed to streamline
+        the monitoring and management of computer labs. It provides real-time
+        insights into computer statuses, network performance, and issue
+        tracking, making it easier for administrators, staff, and students to
+        manage lab resources efficiently.
+      </p>
+      <p><strong>Comsy means Computer System</strong></p>
+
+      <div class="key-points stagger-animation">
+        <div class="key-point animate-on-scroll">
+          <h3>Real-time Monitoring</h3>
+          <p>
+            Track computer statuses including power, network speed, and
+            operational status in real time.
+          </p>
+        </div>
+        <div class="key-point animate-on-scroll">
+          <h3>Issue Management</h3>
+          <p>
+            Comprehensive issue reporting and tracking system for students and
+            staff.
+          </p>
+        </div>
+        <div class="key-point animate-on-scroll">
+          <h3>Role-based Access</h3>
+          <p>
+            Specialized interfaces for Administrators, Staff, and Students with
+            appropriate permissions.
+          </p>
+        </div>
+        <div class="key-point animate-on-scroll">
+          <h3>Resource Booking</h3>
+          <p>
+            Efficient lab booking and resource management system to maximize
+            utilization.
+          </p>
+        </div>
+        <div class="key-point animate-on-scroll">
+          <h3>Centralized Dashboard</h3>
+          <p>
+            Comprehensive admin dashboard for managing computers, users, and
+            reported issues.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section id="tech-stack" class="tech-stack">
+        <h2 class="animate-on-scroll">Built With</h2>
+        <div class="tech-categories stagger-animation">
+            <div class="tech-category animate-on-scroll">
+          <h3>Frontend</h3>
+          <ul class="tech-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+         <div class="tech-category animate-on-scroll">
+          <h3>Backend</h3>
+          <ul class="tech-list">
+            <li>Node.js</li>
+            <li>Express.js</li>
+          </ul>
+        </div>
+         <div class="tech-category animate-on-scroll">
+          <h3>Database</h3>
+          <ul class="tech-list">
+            <li>MongoDB</li>
+          </ul>
+        </div>
+         <div class="tech-category animate-on-scroll">
+          <h3>Authentication</h3>
+          <ul class="tech-list">
+            <li>JWT (JSON Web Tokens)</li>
+          </ul>
+        </div>
+         <div class="tech-category animate-on-scroll">
+          <h3>Real-Time Updates</h3>
+          <ul class="tech-list">
+            <li>WebSocket</li>
+          </ul>
+        </div>
+         <div class="tech-category animate-on-scroll">
+          <h3>Version Control</h3>
+          <ul class="tech-list">
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <h2 class="animate-on-scroll">Why Choose Comsy?</h2>
+        <div class="benefit-cards stagger-animation">
+            <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">⚡</div>
+          <h3>Efficiency</h3>
+          <p>Streamline lab operations and reduce downtime.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">👁️</div>
+          <h3>Transparency</h3>
+          <p>Real-time updates on computer statuses and issues.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">🖱️</div>
+          <h3>User-Friendly</h3>
+          <p>Intuitive interface for all user roles.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">📈</div>
+          <h3>Scalable</h3>
+          <p>Designed to handle multiple labs and users.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <div class="benefit-icon">🔒</div>
+          <h3>Secure</h3>
+          <p>Role-based access control ensures data security.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section - Kept intact, only removed from navbar -->
+    <section id="testimonials" class="testimonials">
+        <h2 class="animate-on-scroll">What Our Users Say</h2>
+        <div class="testimonial-container stagger-animation">
+            <!-- John Smith Testimonial -->
+            <div class="testimonial-card animate-on-scroll">
+                <div class="testimonial-text">
+                    Comsy has made managing our computer lab so much easier. The real-time monitoring feature is a game-changer!
+                </div>
+                <div class="testimonial-author">John Smith</div>
+                <div class="testimonial-role">Computer Lab Administrator</div>
+            </div>
+    
+            <!-- Emily Johnson Testimonial -->
+            <div class="testimonial-card animate-on-scroll">
+                <div class="testimonial-text">
+                    I love how easy it is to report issues and track their progress. Great tool for students!
+                </div>
+                <div class="testimonial-author">Emily Johnson</div>
+                <div class="testimonial-role">Student User</div>
+            </div>
+    
+            <!-- Michael Chen Testimonial -->
+            <div class="testimonial-card animate-on-scroll">
+                <div class="testimonial-text">
+                    The role-based access ensures that only authorized users can make changes. Highly recommended!
+                </div>
+                <div class="testimonial-author">Michael Chen</div>
+                <div class="testimonial-role">Staff Member</div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer with Contact Form -->
+    <footer style="position: relative; padding-top: 60px; padding-bottom: 20px">
+      <div
+        class="footer-container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        "
+      >
+        <!-- Column 1: About -->
+        <div class="footer-column" style="flex: 1 1 250px; margin-bottom: 30px">
+          <h3 style="color: var(--text); font-size: 20px; margin-bottom: 15px">
+            About Comsy
+          </h3>
+          <p style="color: var(--text); font-size: 14px; line-height: 1.6">
+            Comsy is a comprehensive computer lab management system designed to
+            streamline operations, enhance monitoring, and improve resource
+            utilization in educational institutions.
+          </p>
+          <div class="social-icons" style="margin-top: 15px">
+            <a href="#" style="color: var(--text); margin-right: 15px"
+              ><i>📱</i></a
+            >
+            <a href="#" style="color: var(--text); margin-right: 15px"
+              ><i>💻</i></a
+            >
+            <a href="#" style="color: var(--text); margin-right: 15px"
+              ><i>📧</i></a
+            >
+            <a href="#" style="color: var(--text)"><i>🌐</i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column" style="flex: 1 1 200px; margin-bottom: 30px">
+          <h3 style="color: var(--text); font-size: 20px; margin-bottom: 15px">
+            Quick Links
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 8px">
+              <a href="#home" style="color: var(--text); text-decoration: none"
+                >Home</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a
+                href="#about-project"
+                style="color: var(--text); text-decoration: none"
+                >About</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a
+                href="#tech-stack"
+                style="color: var(--text); text-decoration: none"
+                >Tech Stack</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a
+                href="#benefits"
+                style="color: var(--text); text-decoration: none"
+                >Benefits</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a
+                href="login.html"
+                style="color: var(--text); text-decoration: none"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="footer-column" style="flex: 1 1 200px; margin-bottom: 30px">
+          <h3 style="color: var(--text); font-size: 20px; margin-bottom: 15px">
+            Services
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: var(--text); text-decoration: none"
+                >Lab Monitoring</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: var(--text); text-decoration: none"
+                >Resource Booking</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: var(--text); text-decoration: none"
+                >Issue Tracking</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: var(--text); text-decoration: none"
+                >User Management</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: var(--text); text-decoration: none"
+                >Reports & Analytics</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Form -->
+        <div class="footer-column" style="flex: 1 1 300px; margin-bottom: 30px">
+            <h3 class="animate-on-scroll">Contact Us</h3>
+          <form class="animate-on-scroll" style="display: flex; flex-direction: column; gap: 10px">
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+              style="
+                padding: 8px;
+                border-radius: 4px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: var(--input-bg);
+                color: var(--text);
+                font-size: 14px;
+              "
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              style="
+                padding: 8px;
+                border-radius: 4px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: var(--input-bg);
+                color: var(--text);
+                font-size: 14px;
+              "
+            />
+            <textarea
+              placeholder="Your Message"
+              rows="3"
+              required
+              style="
+                padding: 8px;
+                border-radius: 4px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: var(--input-bg);
+                color: var(--text);
+                font-size: 14px;
+                resize: vertical;
+              "
+            ></textarea>
+            <button
+              type="submit"
+              style="
+                padding: 8px;
+                background: var(--accent-gradient);
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+              "
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <footer
+      style="
+        position: relative;
+        width: 100%;
+        background: var(--bg-gradient);
+        padding: 20px 0;
+        margin-top: 60px;
+      "
+    >
+      <!-- Copyright Bar -->
+      <div class="copyright" style="text-align: center">
+        <p style="color: var(--text); font-size: 14px; margin: 0">
+          &copy; 2025 Comsy - Computer Lab Management System. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/landing.js"></script>
+  </body>
+</html>
